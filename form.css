@@ -3,9 +3,15 @@ button:focus {
     outline: 0;
 }
 
+.box {
+    margin-left: 5%;
+    margin-right: 5%;    
+}
+
 .navbar {
 	background-color: #4fb677 !important;
-	font-family: 'Karla', sans-serif;
+    font-family: 'Karla', sans-serif;
+    
 }
 
 .navbar-brand {
@@ -101,27 +107,28 @@ button.navbar-toggler.border-0 {
     box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
 
 .md-form ::placeholder {
-    color: #fff;
+    color: #e1d5dd;
 }
 
 .md-form input {
-    background-color:  #4fb677;
-
+    border-color:  #4fb677;
 }
 
+
 .md-form select {
-    background-color:  #4fb677;
-    color: #fff;
+    border-color:  #4fb677;
+    color: #4fb677;
     float: justify;
 }
 
 .md-form textarea {
-    background-color: #4fb677;
+    border-color: #4fb677;
 }
 
 .filestyle {
-    color: #fff;
+    color: black;
+    border-bottom-color:#4fb677;
 }
 #ex1Slider .slider-selection {
-	background: #BABABA;
+	background: #e1d5dd;
 }

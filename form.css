@@ -9,7 +9,7 @@ button:focus {
 }
 
 .navbar {
-	background-color: #4fb677 !important;
+    background-color: #4fb677;
     font-family: 'Karla', sans-serif;
     
 }
@@ -19,7 +19,7 @@ button:focus {
 }
 
 .nav li a {
-	color: #fff;
+    color: #fff;
 }
 
 .navbar .dropdown-menu .form-control {
@@ -33,15 +33,18 @@ button:focus {
     border-color: #CDDC39;
 }
 
+
+
+
 .form-group .btn-primary{
-	background-color: #4fb677;
-	border-color: #4fb677;
+    background-color: #4fb677;
+    border-color: #4fb677;
 
 }
 
 .form-group .btn-primary:hover {
-	background-color: #4fb677;
-	border-color: #4fb677;
+    background-color: #4fb677;
+    border-color: #4fb677;
 }
 
  .nav .btn-outline-secondary {
@@ -58,18 +61,18 @@ button:focus {
 }
 
 button#dropdownMenu1.btn.btn-outline-secondary.dropdown-toggle{
-	color: #fff;
+    color: #fff;
     background-color: #4fb677;
     border-color: #fff;
     box-shadow: none;
 }
 
 button.navbar-toggler.border-0.collapsed {
-	color: #fff;
+    color: #fff;
 }
 
 button.navbar-toggler.border-0 {
-	color: #fff;
+    color: #fff;
 }
 
 .content {
@@ -88,6 +91,10 @@ button.navbar-toggler.border-0 {
     font-size: 15px;
     margin: 10px;
 
+}
+
+.happy {
+    text-align: center;
 }
 
 .btn-group-lg .btn, .btn-group-sm .btn {
@@ -117,7 +124,7 @@ button.navbar-toggler.border-0 {
 
 .md-form select {
     border-color:  #4fb677;
-    color: #4fb677;
+    color: #fb677;
     float: justify;
 }
 
@@ -130,5 +137,5 @@ button.navbar-toggler.border-0 {
     border-bottom-color:#4fb677;
 }
 #ex1Slider .slider-selection {
-	background: #e1d5dd;
+    background: #e1d5dd;
 }

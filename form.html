@@ -9,12 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
-    
 </head>
 <body>
     <div class="box">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="images/Logo only white.png" alt="Logo" style="width: 50px;margin-left: 10px;"></a>
+            <a class="navbar-brand" href="#"><img src="images/Logo only.png" alt="Logo" style="width: 50px;margin-left: 10px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,37 +51,55 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="content">
-            <div class="justify-content-center align-items-center">
-                <h2>Register</h2>
-                <h3>Become a Member</h3>
-                <br>
-                <p>Ready for join? Please fill the following registration form to become a member of Database Laboratory</p>
-                <button type="button" class="btn btn-lg registrationform" data-toggle="modal" data-target="#registForm">Form Registration</button>
-                
-                <p style="padding-top: 5px; color: #4fb677; ">SUBMISSION DEADLINE: February 25, 2019 </p>
-                
-                <h5>Terms and Conditions</h5>
-                <p>Please, read the terms and conditions below <b>before</b> filling out the form</p>
-                <button type="button" class="btn btn-lg lookinside" data-toggle="modal" data-target="#lookinside">Look In Side</button>
+        <div class="row">
+            <div class="col">
+                <div class="justify-content-center align-items-center">
+                    <div class="modal-dialog">
+                        <div class="happy">
+                            <h2>Register</h2>
+                            <h3>Become a Member</h3>
+                            <br>
+                            <p>Ready for join? Please fill the following registration form to become a member of Database Laboratory</p>
+                            
+                            <p style="padding-top: 5px; color: #4fb677; ">SUBMISSION DEADLINE: February 25, 2019 </p>
+                            
+                            <h5>Terms and Conditions</h5>
+                            <p>Please, read the terms and conditions below <b>before</b> filling out the form</p>
+                            <button type="button" class="btn btn-lg lookinside" data-toggle="modal" data-target="#lookinsides">Look In Side</button>
+            
+                            <h5 style="padding-top: 5px;">Additional Task</h5>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#bigdata">Big Data</button>
+                                <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#product">Product</button>
+                                <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#spatial">Spatial</button>
+                            </div>
 
-                <h5 style="padding-top: 5px;">Additional Task</h5>
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#bigdata">Big Data</button>
-                    <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#product">Product</button>
-                    <button type="button" class="btn btn-unique" data-toggle="modal" data-target="#spatial">Spatial</button>
+                            <div class="modal fade" id="lookinsides">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modael-title">Term and Condition</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            ....
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
-            
-            <!-- Modal Registration Form -->
-            <div class="modal fade" id="registForm">
+            <div class="col kanan">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
                         <div class="modal-header">
                             <h4 class="modal-title">Registration Form</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
                         <div class="modal-body">
@@ -119,44 +136,47 @@
                                     <option value="3">Class of 2018</option>
                                 </select>
                             </div>
-                            <div class="md-form">
+
+                            <div class="md-form" style="margin-bottom: 10px;">
                                 <label for="Form-option1">What first group do you choose?</label>
                                 <select class="custom-select" id="Form-option1">
-                                    <option selected></option>
+                                    <option selected>first group</option>
                                     <option value="1">Big Data</option>
                                     <option value="2">Spatial</option>
                                     <option value="3">Product</option>
                                 </select>
                             </div>
                             <div class="md-form">
-                                <div class="d-flex justify-content-center my-4">
-                                    <span class="font-weight-bold blue-text mr-2 mt-1">0</span>
-                                        <form class="range-field w-50">
-                                            <input class="border-0" type="range" min="0" max="100" />
-                                        </form>
-                                    <span class="font-weight-bold blue-text ml-2 mt-1">100</span>
-                                </div>
+                                <select class="custom-select" id="presentase1">
+                                    <option selected>Precentage</option>
+                                    <option>100%</option>
+                                    <option>90%</option>
+                                    <option>80%</option>
+                                    <option>70%</option>
+                                    <option>60%</option>
+                                </select>
                                 <label for="Form-persentase">percentage of interest</label>
                                 <p><b>Note: </b>Persentase yang dimaksud adalah persentase minat kamu untuk bergabung pada grup pertama</p>
                                 <hr>
                             </div>
-                            <div class="md-form">
+                            <div class="md-form" style="margin-bottom: 10px;">
                                 <label for="Form-option1">What second group do you choose?</label>
                                 <select class="custom-select" id="Form-option2">
-                                    <option selected></option>
+                                    <option selected>Second group</option>
                                     <option value="1">Big Data</option>
                                     <option value="2">Spatial</option>
                                     <option value="3">Product</option>
                                 </select>
                             </div>
                             <div class="md-form">
-                                <div class="d-flex justify-content-center my-4">
-                                    <span class="font-weight-bold blue-text mr-2 mt-1">0</span>
-                                        <form class="range-field w-50">
-                                            <input class="border-0" type="range" min="0" max="100" />
-                                        </form>
-                                    <span class="font-weight-bold blue-text ml-2 mt-1">100</span>
-                                </div>
+                                <select class="custom-select" id="presentase2">
+                                    <option selected>Precentage</option>
+                                    <option>0%</option>
+                                    <option>10%</option>
+                                    <option>20%</option>
+                                    <option>30%</option>
+                                    <option>40%</option>
+                                </select>
                                 <label for="Form-persentase">percentage of interest</label>
                                 <p><b>Note: </b>Persentase yang dimaksud adalah persentase minat kamu untuk bergabung pada grup kedua</p>
                                 <hr>
@@ -164,7 +184,7 @@
                             <div class="md-form">
                                 <label for="Form-motivation">Your Motivation</label>
                                 <textarea class="form-control" rows="4" id="Form-motivation" placeholder="My motivation join database lab is ..."></textarea>
-					            <p><b>Note:</b> Tell us about your reason want to join the database lab and what you get from the "additional task" that you have done before</p>
+                                <p><b>Note:</b> Tell us about your reason want to join the database lab and what you get from the "additional task" that you have done before</p>
                                 <hr>
                             </div>
                             <div class="md-form">
@@ -209,84 +229,68 @@
                         <p><b>Note:</b> After SUBMIT, please ask our OA line: @basisdatalab to make sure your files are collected :) </p>
                         <div class="modal-footer">
                             <button type="button" class="btn">Submit</button>
-                            <button type="button" class="btn" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="modal fade" id="lookinside">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modael-title">Term and Condition</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <div class="modal-body">
-                            ....
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="bigdata">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modael-title">Additional Task for Big Data</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <div class="modal-body">
-                            ....
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="product">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modael-title">Additional Task for Product</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <div class="modal-body">
-                            ....
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="spatial">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modael-title">Additional Task for Spatial</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <div class="modal-body">
-                            ....
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
-    </div>
 
-    
+        
+
+        <div class="modal fade" id="bigdata">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modael-title">Additional Task for Big Data</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        ....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="product">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modael-title">Additional Task for Product</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        ....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="spatial" role="document">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modael-title">Additional Task for Spatial</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        ....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

@@ -139,3 +139,7 @@ button.navbar-toggler.border-0 {
 #ex1Slider .slider-selection {
     background: #e1d5dd;
 }
+
+p {
+   font-size: 13px;
+}
